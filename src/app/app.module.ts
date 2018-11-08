@@ -1,14 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { MessagesModule } from 'primeng/components/messages/messages';
+
 import { AppComponent } from './app.component';
+import { MessageComponent } from './shared/message/message.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MessageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MessagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
